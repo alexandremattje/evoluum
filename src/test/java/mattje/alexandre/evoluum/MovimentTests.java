@@ -22,10 +22,10 @@ public class MovimentTests {
 
 	@Test
 	public void testMMRMMRMM() {
-		Robot robot = moviment.executeCommand(defaultRobotStartPosition(), "MMRMMRMMR", defaultTerrain());
+		Robot robot = moviment.executeCommand(defaultRobotStartPosition(), "MMRMMRMM", defaultTerrain());
 
 		Assertions.assertThat(robot).isEqualTo(Robot.builder()
-				.direction(Direction.NORTH)
+				.direction(Direction.SOUTH)
 				.x(2)
 				.y(0)
 				.build());
