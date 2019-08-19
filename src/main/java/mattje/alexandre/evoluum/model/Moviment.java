@@ -24,7 +24,6 @@ public class Moviment {
 				robot = command.move(robot);
 			}
 		}
-
 		return robot;
 	}
 
