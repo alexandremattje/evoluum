@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "269e8a48-75e8-4fb1-8029-34faadd22d90",
+		"name": "evoluum",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Movimento com rotações para direita",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"x\": 0,\n\t\"y\": 0,\n\t\"direction\": \"N\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/rest/mars/MMRMMRMM",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"mars",
+						"MMRMMRMM"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Movimento para esquera",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"x\": 0,\n\t\"y\": 0,\n\t\"direction\": \"N\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/rest/mars/MML",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"mars",
+						"MML"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Comando inválido",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"x\": 0,\n\t\"y\": 0,\n\t\"direction\": \"N\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/rest/mars/AAA",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"mars",
+						"AAA"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Posição inválida",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"x\": 0,\n\t\"y\": 0,\n\t\"direction\": \"N\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/rest/mars/MMMMMMMMMMMMMMMMMMMMMMMM",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"mars",
+						"MMMMMMMMMMMMMMMMMMMMMMMM"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

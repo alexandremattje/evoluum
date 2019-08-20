@@ -6,7 +6,7 @@ import mattje.alexandre.evoluum.dto.Robot;
 import mattje.alexandre.evoluum.enums.Direction;
 
 @Component
-public class Command {
+public class MoveModel {
 
 	public Robot left(Robot robot) {
 		int newDirection = robot.getDirection().ordinal() - 1;
@@ -28,13 +28,13 @@ public class Command {
 
 	public Robot move(Robot robot) {
 		switch (robot.getDirection()) {
-		case NORTH:
+		case N:
 			return robot.toBuilder().y(robot.getY() + 1).build();
-		case SOUTH:
+		case S:
 			return robot.toBuilder().y(robot.getY() - 1).build();
-		case WEST:
+		case W:
 			return robot.toBuilder().x(robot.getX() - 1).build();
-		case EAST:
+		case E:
 			return robot.toBuilder().x(robot.getX() + 1).build();
 		}
 		return robot;

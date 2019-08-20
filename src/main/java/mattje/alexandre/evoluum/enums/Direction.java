@@ -5,10 +5,10 @@ import lombok.AllArgsConstructor;
 @AllArgsConstructor
 public enum Direction {
 
-	WEST("W"),
-	NORTH ("N"),
-	EAST("E"),
-	SOUTH("S"),
+	W("W"),
+	N("N"),
+	E("E"),
+	S("S"),
 	;
 
 	private String letter;
