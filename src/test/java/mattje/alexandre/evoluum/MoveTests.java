@@ -60,7 +60,7 @@ public class MoveTests {
 				.build());
 
 		Assertions.assertThat(robotRight).isEqualTo(Robot.builder()
-				.direction(Direction.W)
+				.direction(Direction.E)
 				.x(1)
 				.y(1)
 				.build());
