@@ -2,13 +2,13 @@
 
 # Evoluum
 
-### Para compilar:
+### Para compilar
 mvn clean install
 
-### Para excutar:
+### Para excutar
 java -jar ./target/evoluum-0.0.1-SNAPSHOT.jar
 
-### Para testar:
+### Para testar
 sh test.sh
 <br>ou
 <br>Utilizar o Postman e importar o arquivo evoluum.postman_collection.json
