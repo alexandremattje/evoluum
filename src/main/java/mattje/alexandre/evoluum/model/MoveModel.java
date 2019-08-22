@@ -8,10 +8,11 @@ import mattje.alexandre.evoluum.enums.Direction;
 @Component
 public class MoveModel {
 
+
 	public Robot left(Robot robot) {
 		int newDirection = robot.getDirection().ordinal() - 1;
-		if (newDirection == -1) {
-			newDirection = 3;
+		if (newDirection < Direction.W.ordinal()) {
+			newDirection = Direction.S.ordinal();
 		}
 
 		return robot.toBuilder().direction(Direction.values()[newDirection]).build();
@@ -19,8 +20,8 @@ public class MoveModel {
 
 	public Robot right(Robot robot) {
 		int newDirection = robot.getDirection().ordinal() + 1;
-		if (newDirection == 4) {
-			newDirection = 0;
+		if (newDirection > Direction.S.ordinal()) {
+			newDirection = Direction.W.ordinal();
 		}
 
 		return robot.toBuilder().direction(Direction.values()[newDirection]).build();

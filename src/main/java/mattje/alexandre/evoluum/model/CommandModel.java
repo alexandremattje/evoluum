@@ -16,13 +16,13 @@ public class CommandModel {
 	private MoveModel move;
 
 	public CommandExecuted executeCommand(Robot robot, String commands, Terrain terrain) {
-		char[] chars = commands.toCharArray();
-		for (char c : chars) {
-			if (CommandLetters.L.getLetter() == c) {
+		char[] commandsInArray = commands.toCharArray();
+		for (char singleCommand : commandsInArray) {
+			if (CommandLetters.L.getLetter() == singleCommand) {
 				robot = move.left(robot);
-			} else if (CommandLetters.R.getLetter() == c) {
+			} else if (CommandLetters.R.getLetter() == singleCommand) {
 				robot = move.right(robot);
-			} else if (CommandLetters.M.getLetter() == c) {
+			} else if (CommandLetters.M.getLetter() == singleCommand) {
 				robot = move.move(robot);
 				if (!checkTerrainBounds(robot, terrain)) {
 					return CommandExecuted.builder()
